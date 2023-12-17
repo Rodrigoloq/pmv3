@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComidaSalud</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/food-and-restaurant.png">
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="demo"
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+</head>
+
+<body>
+    <main>
+        <div id="header" class="padded">
+            <h1>ComidaSalud</h1>
+            <p>Simplificamos tu vida, cocinar saludable nunca fue tan fácil.</p>
+        </div>
+        <div id="mensaje1" class="padded">
+            <div class="fondo container">
+                <h1>Alimentación saludable, sin complicaciones.</h1>
+                <p>Nuestras canastas de alimentos frescos y saludables se entregan a tu puerta,
+                    ya preparadas para que las disfrutes.<br> No tienes que preocuparte por saber que cocinar,
+                    planificar o comprar alimentos. Solo tienes que relajarte y disfrutar de una comida saludable.</p>
+                <a class="boton" href="#formulario">Comienza tu experiencia</a>
+            </div>
+        </div>
+        <div id="mensaje2">
+            <div class="container">
+                <div id="lazos">
+                    <div>
+                        <h1>¿Que es ComidaSalud?</h1>
+                        <p>ComidaSalud es un servicio que se basa en ofrecer canastas
+                            predeterminadas con alimentos frescos y saludables,
+                            junto con recetas fáciles de seguir y preparar, permitiendo
+                            que nuestros clientes elijan las canastas o kits que desean comprar
+                            a través de una app intuitiva y fácil de usar.</p>
+                        <a class="boton" href="#formulario">Comienza tu experiencia</a>
+                    </div>
+                    <div>
+                        <img src="images/telefono.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mensaje3">
+            <div class="container">
+                <div id="lazos">
+                    <div>
+                        <img src="images/camion.png" alt="">
+                    </div>
+                    <div>
+                        <h1>Comida fresca y deliciosa, entregada a tu puerta.</h1>
+                        <p>Nuestras canastas están llenas de alimentos frescos y deliciosos,
+                            seleccionados bajo altos estandares de calidad. Los alimentos se entregan
+                            directamente a tu puerta, para que puedas disfrutarlos al máximo.</p>
+                        <a class="boton" href="#formulario">Comienza tu experiencia</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div id="lazos">
+                <div id="lazo1" class="margin-ribbon">
+                    <div class="ribbon">
+                        Producto frescos
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+                </div>
+                <div id="lazo2" class="margin-ribbon">
+                    <div class="ribbon">
+                        Recetas faciles
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+                </div>
+                <div id="lazo3" class="margin-ribbon">
+                    <div class="ribbon">
+                        Entrega rapida
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mensaje5">
+            <div class="container">
+                <div id="lazos">
+                    <div>
+                        <h1>¿Como funciona ComidaSalud?</h1>
+                        <p>ComidaSalud funciona a través de una sencilla aplicación. Una vez descargada, solo debes
+                            registrarte, elegir el plan que mejor se adecue a tu estilo de vida y presupuesto,
+                            configurar dónde y cuándo quieres recibir tus alimentos, ¡y listo! Ya puedes empezar a
+                            utilizar ComidaSalud.
+                            <br>
+                            Tendrás acceso a diversas recetas saludables. Todas contarán con una explicación detallada
+                            de cómo prepararlas, así como también los valores nutricionales.
+                            <br>
+                            A diferencia de otros servicios, en ComidaSalud no entregamos la comida hecha. Nosotros
+                            proporcionamos los ingredientes y las recetas, lo que te permite comprobar la calidad y
+                            frescura de tus alimentos al mismo tiempo que aprendes a cocinar saludablemente.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="images/bolsa.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mensaje6">
+            <div class="container">
+                <div id="lazos">
+                    <div>
+                        <h1>Más de lo que imaginas</h1>
+                        <p>¡Descubre una experiencia culinaria completa con nuestra aplicación de entrega de comida y
+                            recetas!
+                            No solo te ofrecemos lo esencial, sino que también hemos agregado funciones adicionales para
+                            mejorar
+                            tu bienestar y facilitar tu vida cotidiana. Ademas, la app contara con cientos de imagenes
+                            que te serviran
+                            de referencia al momento de elegir tus alimentos y recetas.
+                            <br><br>
+                            <strong>Calcula tus nutrientes y calorias:</strong>
+                            Ahora puedes conocer la información nutricional de cada platillo al alcance de tus dedos.
+                            Calcula los
+                            nutrientes esenciales y calorias totales por porcion para tomar decisiones informadas sobre
+                            tu alimentación.
+                            <br><br>
+                            <strong>Planificación semanal de platos variados:</strong>
+                            Diseñar tu semana alimentaria nunca fue tan sencillo. Con nuestra función de planificación,
+                            puedes
+                            organizar tus comidas de manera eficiente. Varía tu dieta, mantén un equilibrio nutricional
+                            y disfruta
+                            de una rutina alimentaria más saludable.
+                            <br><br>
+                            <strong>Asistentes en línea a tu disposición:</strong>
+                            ¿Necesitas ayuda instantánea mientras estás en la cocina? Nuestros asistentes en línea están
+                            listos para
+                            responder tus preguntas y proporcionarte consejos útiles. Ya sea que busques sugerencias de
+                            recetas,
+                            ayuda con la planificación o consejos sobre nutrientes, nuestro equipo de expertos está aquí
+                            para ti.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="images/app.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mensaje4" class="padded">
+            <div class="container">
+                <h1>Canastas diseñadas para tu salud, recetas diseñadas para tu estilo de vida.</h1>
+                <p>Sumérgete en el arte de la cocina con nuestras irresistibles recetas.
+                    Cada canasta que ofrecemos no solo trae ingredientes frescos y saludables,
+                    sino también la inspiración para crear deliciosas comidas en la comodidad de tu hogar.
+                    Nuestras recetas fáciles de seguir son cuidadosamente elaboradas por chefs expertos,
+                    asegurando una experiencia culinaria excepcional. Desde platos reconfortantes hasta
+                    opciones gourmet, nuestras recetas te guiarán paso a paso, convirtiendo cada comida
+                    en un festín para tus sentidos. Descubre el placer de cocinar con simplicidad y estilo,
+                    todo ello incluido en cada canasta que ofrecemos. ¡Prepárate para explorar un mundo
+                    de sabores en tu propia cocina!.</p>
+            </div>
+        </div>
+        <div id="mensaje7">
+            <div class="container">
+                <div id="lazos">
+                    <div>
+                        <h1>"¡Descubre nuestras ofertas especial!"</h1>
+                        <p>Sorpresas irresistibles para los primeros en unirse a nuestra comunidad saludable.</p>
+                        <p>!Personaliza y Ahorra! <strong>50%</strong> de descuento en la membresia anual para los
+                            primeros 100 usuarios"</p>
+                        <p id="demo"></p>
+                        <a class="boton" href="#formulario">Comienza tu experiencia</a>
+                    </div>
+                    <div>
+                        <img src="images/oferta.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="lazos" class="padded">
+        <div id="lista">
+            <h1>Siguenos</h1>
+            <ul>
+                <li><i class="fa fa-facebook-official fa-2xl" aria-hidden="true"></i></li>
+                <li><i class="fa fa-instagram fa-2xl" aria-hidden="true"></i></li>
+                <li><i class="fa fa-twitter fa-2xl" aria-hidden="true"></i></li>
+            </ul>
+        </div>
+        <div>
+            <p>Dejanos tus datos para brindarte informacion.</p>
+            <form id="formulario">
+                <div id="lazos">
+                    <div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Telefono">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="mensaje" name="mensaje" rows="5"
+                                placeholder="Escribe aqui tu mensaje"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div id="lazos">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </footer>
+    <a href="#" id="ir-arriba"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+</body>
+
+</html>
